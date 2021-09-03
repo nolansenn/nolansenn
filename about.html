@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Nolan's Cloud Journey</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;600&display=swap" rel="stylesheet">"
+<script src="https://kit.fontawesome.com/9145e6567a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src=images/logo.png></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>About this site</h1>
+    </div>
+
+    </section>
+<!---About Seciton --->
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1> The Scoop </h1>
+            <p>I'm a junior at George Mason University in Fairfax, Virginia.
+            Im currently pursuing a B.S. in Information Technology with a concentration in Cloud Computing.
+            I created this website to showcas e my journey to becoming a cloud engineer.
+            The website is a work in progress and is coded with HTML, CSS, and Javascript. This is the first website I've created with CSS 
+            and JavaScript, which was certainly a learning curve. I found it particulary tricky to get the mobile version 
+            working correctly. I find myself fond of Web Development even though 
+            I don't consider it my main interest. The deployment and management of this website is done through AWS. 
+            I utilize the free tier on AWS to pay a very low amount for this website. The most expensive cost was buying the domain!
+            I use an S3 bucket to serve the static web files. I then use Cloudfront to utilize edge locations and Certificate Manager for an SSL certificate. Finally, 
+            I use Route 53 to point towards my custom DNS domain. That's all it takes to host the website. I also have a budget setup and custom billing alerts
+            in case my site miraciously garners too much traffic. Oh no! I'm currently working on a JavaScript website traffic counter that stores the count in a DynamoDB.
+
+            </p>
+        <a href=""></a>
+        
+
+        </div>
+</section>
+<!--Javascript for Toggle Menu-->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){    
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+
+    }
+    
+</script>
+<!---Javascript for Visitor Counter--> 
+
+
+
+</body>
+<section class="footer">
+    <p> Made by Nolan Senn 2021. Powered by AWS. </p>
+    <div class="icons">
+       <a href="https://www.linkedin.com/in/nolan-senn-81bba01b3/" class="linkedinlink"> <p> Connect with me on <i class="fa fa-linkedin-square" aria-hidden="true"></i> </p> </a>
+    </div>
+</section>
+</html>

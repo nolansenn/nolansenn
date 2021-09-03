@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Nolan's Cloud Journey</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;600&display=swap" rel="stylesheet">"
+<script src="https://kit.fontawesome.com/9145e6567a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-headers">
+        <nav>
+            <a href="index.html"><img src=images/logo.png></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Resume (PDF)</h1>
+    <div class="download" id="fa fa-cloud">
+       <a href="Nolan Senn Resume 2021.pdf" class="downloadlink">
+        <i class="fa fa-cloud-download"> </i>
+       </div<>
+    </section>
+
+    </div>
+        </section>
+    </a>
+<!---About Seciton --->
+
+<!--Javascript for Toggle Menu-->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){    
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+
+    }
+    
+</script>
+<!---Javascript for Visitor Counter--> 
+
+
+
+</body>
+<section class="footer">
+    <p> Made by Nolan Senn 2021. Powered by AWS. </p>
+    <div class="icons">
+       <a href="https://www.linkedin.com/in/nolan-senn-81bba01b3/" class="linkedinlink"> <p> Connect with me on <i class="fa fa-linkedin-square" aria-hidden="true"></i> </p> </a>
+    </div>
+</section>
+</html>
