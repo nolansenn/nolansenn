@@ -1,0 +1,1 @@
+Hello, I am @nolansenn. I am a Junior IT student in Virginia focused on Cloud Computing. I'm setting up this reposistory as a way to manage my files and further create automation pipelines for my code. 
